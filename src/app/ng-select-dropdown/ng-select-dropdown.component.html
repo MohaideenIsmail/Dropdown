@@ -1,0 +1,10 @@
+<div class="ng-dropdown-container">
+    <div class="ng-dropdown" (click)="toggleDropdown()">{{settings.placeHolder}}
+        <span class="arrow-icon"></span>
+    </div>
+    <ul class="ng-dropdown-list" [ngClass]="settings.className" *ngIf="isDropdownVisible">
+        <li *ngFor="let item of settings.data" (click)="selectValue(item)">
+            {{item[settings.elementName]}}
+        </li>
+    </ul>
+</div>

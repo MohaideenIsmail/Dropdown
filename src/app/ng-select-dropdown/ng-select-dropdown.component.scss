@@ -1,0 +1,43 @@
+.ng-dropdown-container {
+    position: relative;
+    cursor: pointer;
+    .arrow-icon {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        background: url('../../assets/updown.png') no-repeat;
+        height: 9px !important;
+        width: 9px !important;
+        background-size: 100%;
+    }
+    .ng-dropdown {
+        border: solid 1px #ddd;
+        padding: 3px;
+        border-radius: 3px;
+    }
+    .ng-dropdown-list {
+        position: absolute;
+        top: 24px;
+        border: solid 1px #ddd;
+        width: 100%;
+        z-index: 1;
+        background: #fff;
+        height: 190px;
+        overflow-y: auto;
+        li {
+            padding: 5px;
+            border-bottom: solid 1px #ddd;
+            &:nth-child(odd) {
+                background: #fcfdfe;
+                border-bottom: 1px solid #d9dcde;
+            }
+            &:nth-child(even) {
+                background: #fff;
+                border-bottom: 1px solid #d9dcde;
+            }
+            &:hover {
+                background: #ecf0f1;
+            }
+        }
+    }
+}

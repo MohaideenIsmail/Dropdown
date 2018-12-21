@@ -1,0 +1,21 @@
+<h3> Default Dropdown </h3>
+
+<app-ng-select-dropdown [settings]="dropdownSettings" (changeEmit)="onChangeEmit($event)"></app-ng-select-dropdown>
+
+<h3> Pre selected item</h3>
+
+<app-ng-select-dropdown [settings]="dropdownSettingsSelected" (changeEmit)="onChangeEmit($event)"></app-ng-select-dropdown>
+
+<h3>Sample configuration object</h3>
+
+<pre class="json">{{sampleObj | json}}</pre>
+
+<h3>Events</h3>
+
+<div>
+    <ul>
+        <li> changeEmit - Triggering on select item </li>
+    </ul>
+</div>
+
+<footer>Mohaideen I <br> mohaideenismail04@gmail.com <br> +91-98946-78966</footer>
